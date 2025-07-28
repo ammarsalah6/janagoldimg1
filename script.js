@@ -45,6 +45,19 @@ window.addEventListener("scroll", () => {
     if (window.scrollY < 200) {
         scrollBtn.classList.add("show");
     } else {
-        scrollBtn.classList.add("show");
+        scrollBtn.classList.remove("show");
     }
 });
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+window.addEventListener('scroll', function() {
+    const upBtn = document.querySelector('.scroll-up-btn');
+    if (window.scrollY > 200) {
+        upBtn.classList.add('show');
+    } else {
+        upBtn.classList.remove('show');
+    }
+});
+

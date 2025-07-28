@@ -82,7 +82,7 @@ nav a {
     font-family: Andalus;
     font-weight: bold;
     font-size: 35px;
-    color: rgb(255, 238, 0);
+    color: rgb(9, 199, 224);
 }
 
 .thumbs {
@@ -142,10 +142,10 @@ table th {
 
 .scroll-down-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #333;
-    color: #fff;
+    bottom: 250px;
+    right: 50px;
+    background: #f17603;
+    color: #f5f10e;
     border: none;
     border-radius: 50%;
     width: 70px;
@@ -162,6 +162,29 @@ table th {
 }
 
 .scroll-down-btn:hover {
-    background: #666;
+    background: #f7d386;
+}
+.scroll-up-btn {
+    position: fixed;
+    bottom: 180px; 
+    right: 50px;
+    background: #f17603;
+    color: #f5f10e;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s;
+    display: none; 
 }
 
+.scroll-up-btn.show {
+    display: block;
+}
+
+.scroll-up-btn:hover {
+    background: #f7d386;
+}
