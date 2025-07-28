@@ -82,7 +82,7 @@ nav a {
     font-family: Andalus;
     font-weight: bold;
     font-size: 35px;
-    color: blue;
+    color: rgb(255, 238, 0);
 }
 
 .thumbs {
@@ -169,46 +169,22 @@ table th {
     header {
         flex-direction: column;
         gap: 10px;
-        text-align: center;
     }
-
     .container {
         flex-direction: column;
         align-items: center;
     }
-
     .main-product img {
-        width: 180px;
+        width: 200px;
     }
-
-    .main-product h2 {
-        font-size: 20px;
-    }
-
-    .main-product p {
-        font-size: 14px;
-    }
-
     .details {
-        width: 95%;
-        font-size: 14px;
-        overflow-x: auto; /* Scroll للجدول */
+        width: 90%;
     }
-
-    table {
-        width: 600px; /* يخلي الجدول يفضل شكله ثابت ويعمل Scroll */
-    }
-
-    .thumbs {
-        display: flex;
-        overflow-x: auto;
-        gap: 10px;
-        padding: 10px 0;
-    }
-
     .thumbs img {
         width: 50px;
-        height: 70px;
+        height: 75px;
+    }
+    .details table {
+        display: none;
     }
 }
-
