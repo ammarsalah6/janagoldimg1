@@ -36,7 +36,11 @@ nav a {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
     gap: 20px;
 }
 
@@ -48,10 +52,20 @@ nav a {
 }
 
 .main-product img {
-    width: 250px;
+    width: 320px;
+    max-width: 100%;
+    margin-bottom: 15px;
     transition: transform 0.4s ease;
     border-radius: 10px;
 }
+.main-product h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+.main-product p {
+    font-size: 18px;
+}
+
 
 .main-product img:hover {
     transform: scale(1.05);
@@ -80,15 +94,15 @@ nav a {
 .search-box {
     display: flex;
     justify-content: center
-   
 }
 
 .search-box input {
-    width: 50%;
+    width: 80%;
     padding: 8px;
     border-radius: 5px;
     border: none;
     font-size: 16px;
+    max-width: 400px;
 }
 .brand-titly{
     font-family: Andalus;
@@ -100,7 +114,7 @@ nav a {
 .thumbs {
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 20px;
     gap: 20px;
     flex-wrap: wrap;
     left: 50px;
