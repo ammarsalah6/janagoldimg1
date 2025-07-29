@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    font-size: 22px;
     position: relative;
     min-height: 100vh;
 }
@@ -76,7 +77,7 @@ nav a {
 /* العنوان جوا التفاصيل */
 .details h3 {
     text-align: center; /* ✅ النص في النص */
-    font-size: 22px; 
+    font-size: 32px; 
     font-weight: bold; 
     color: #0c0c0c; 
     margin-bottom: 10px; 
@@ -130,7 +131,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -145,15 +146,15 @@ table th {
 
 /* النص تحت الصورة */
 #productName {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     color: #f30b0b;
     margin: 10px 0;
     font-family: Andalus;
 }
 #productDesc {
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 20px;
+    font-weight: bold;
     color: #333; 
     margin: 5px 0;
 }
