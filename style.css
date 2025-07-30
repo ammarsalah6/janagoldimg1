@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    font-size: 22px;
+    font-size: 32px;
     position: relative;
     min-height: 100vh;
 }
@@ -58,11 +58,11 @@ nav a {
     transform: scale(1.05);
 }
 .main-product h2 {
-    font-size: 28px;
+    font-size: 32px;
     margin: 10px 0;
 }
 .main-product p {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /* تفاصيل المنتج */
@@ -77,7 +77,7 @@ nav a {
 /* العنوان جوا التفاصيل */
 .details h3 {
     text-align: center; /* ✅ النص في النص */
-    font-size: 32px; 
+    font-size: 35px; 
     font-weight: bold; 
     color: #0c0c0c; 
     margin-bottom: 10px; 
@@ -93,7 +93,7 @@ nav a {
     padding: 8px;
     border-radius: 5px;
     border: none;
-    font-size: 32px;
+    font-size: 38px;
     max-width: 400px;
 }
 
@@ -101,7 +101,7 @@ nav a {
 .brand-titly {
     font-family: Andalus;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 38px;
     color: rgb(9, 199, 224);
 }
 
@@ -115,8 +115,8 @@ nav a {
 }
 
 .thumbs img {
-    width: 90px;
-    height: 120px;
+    width: 120px;
+    height: 150px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
@@ -131,7 +131,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -146,14 +146,14 @@ table th {
 
 /* النص تحت الصورة */
 #productName {
-    font-size: 30px;
+    font-size: 38px;
     font-weight: bold;
     color: #f30b0b;
     margin: 10px 0;
     font-family: Andalus;
 }
 #productDesc {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
     color: #333; 
     margin: 5px 0;
@@ -168,8 +168,8 @@ table th {
     color: #f5f10e;
     border: none;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     font-size: 24px;
     cursor: pointer;
     z-index: 1000;
