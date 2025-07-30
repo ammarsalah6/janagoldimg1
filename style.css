@@ -101,7 +101,7 @@ nav a {
 .brand-titly {
     font-family: Andalus;
     font-weight: bold;
-    font-size: 42px;
+    font-size: 52px;
     color: rgb(9, 199, 224);
 }
 
@@ -195,7 +195,7 @@ table th {
     width: 320px;
     max-width: 100%;
     margin-bottom: 15px;
-    transition: transform 0.4s ease;
-    border-radius: 10px;
+    transition: transform 0.9s ease;
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(218, 165, 32, 0.7); /* ✅ شادو دهبي */
 }
