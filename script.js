@@ -1,3 +1,4 @@
+
 function changeProduct(name, desc, img, tableData) {
     document.getElementById("productName").innerText = name;
     document.getElementById("productDesc").innerText = desc;
@@ -61,3 +62,10 @@ window.addEventListener('scroll', function() {
     }
 });
 
+function openAbout() {
+    document.getElementById('aboutSection').style.display = 'flex';
+}
+
+function closeAbout() {
+    document.getElementById('aboutSection').style.display = 'none';
+}

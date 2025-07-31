@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -78,23 +79,37 @@ nav a {
     text-align: center; /* ✅ النص في النص */
     font-size: 35px; 
     font-weight: bold; 
-    color: #0c0c0c; 
+    color: #0f7cf8; 
     margin-bottom: 10px; 
 }
 
 /* مربع البحث */
 .search-box {
+    position: relative;
     display: flex;
     justify-content: center;
-}
-.search-box input {
+    align-items: center;
     width: 80%;
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    font-size: 38px;
     max-width: 400px;
+    margin: 10px auto;
 }
+
+.search-box input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* مساحة للأيقونة */
+    font-size: 30px;
+    border-radius: 20px;
+    border: 1px solid #47b7f8;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px; /* على حسب الاتجاه */
+    color: #0897f7;
+    font-size: 20px;
+}
+
 
 /* عنوان الموقع */
 .brand-titly {
@@ -135,8 +150,8 @@ table {
     font-family: 'Times New Roman', Times, serif;
 }
 table th, table td {
-    border: 1px solid #fff;
-    padding: 8px;
+    border: 1px solid #0bc6e7;
+    padding: 5px;
     text-align: center;
 }
 table th {
@@ -164,13 +179,13 @@ table th {
     position: fixed;
     right: 20px; /* ✅ ثابت من اليمين */
     Bottom: 300px;
-    background: #f17603;
-    color: #f5f10e;
+    background: #0970e6;
+    color: #0e1df5;
     border: none;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
     z-index: 1000;
     transition: background 0.3s;
@@ -182,7 +197,7 @@ table th {
 }
 .scroll-down-btn:hover,
 .scroll-up-btn:hover {
-    background: #f7d386;
+    background: #2bb9f1;
 }
 .scroll-down-btn {
     bottom: 100px;
@@ -198,3 +213,134 @@ table th {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(218, 165, 32, 0.7); /* ✅ شادو دهبي */
 }
+/* زر "اعرف عنا" */
+.about-btn {
+    color: #fff;
+    background: #0fa7ee;
+    padding: 20px 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.3s;
+}
+.about-btn:hover {
+    background: #07edf5;
+    transform: scale(1.05);
+}
+
+/* البوب أب */
+.about-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    background: #fff;
+    color: #333;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    position: relative;
+    animation: fadeIn 0.4s ease;
+}
+
+.about-content h2 {
+    color: #d49e0a;
+    margin-bottom: 10px;
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-content p {
+    color: #444;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #555;
+    font-weight: bold;
+}
+.close-btn:hover {
+    color: #d49e0a;
+}
+
+.attention {
+    position: relative;
+    background: #1185e4;
+    color: #ecf1f1;
+    padding: 15px 40px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: none;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+    transition: 0.3s;
+}
+
+.attention:hover {
+    background: #0ca2e7;
+    transform: scale(1.5);
+}
+
+/* حركة النبض */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(10, 155, 212, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(212,158,10, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(212,158,10, 0); }
+}
+
+.attention i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/* أزرار السوشيال */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.social-btn {
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    color: #fff;
+}
+.fb { background: #1877f2; }
+.ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.tw { background: #1da1f2; }
+.tk { background: #010101; }
+.social-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+}
+.about-btn i {
+    margin-right: 8px; 
+    font-size: 30px;   
+    color: #f5f4fa;
+}
+
