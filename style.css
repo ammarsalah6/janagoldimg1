@@ -143,11 +143,11 @@ nav a {
 /* الجدول */
 table {
     width: 100%;
-    border-collapse: collapse;
     margin-top: 15px;
     font-size: 34px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
+    background: rgba(6, 135, 209, 0.2);
 }
 table th, table td {
     border: 1px solid #0bc6e7;
@@ -160,7 +160,7 @@ table th {
 
 /* النص تحت الصورة */
 #productName {
-    font-size: 38px;
+    font-size: 48px;
     font-weight: bold;
     color: #f30b0b;
     margin: 10px 0;
@@ -171,6 +171,9 @@ table th {
     font-weight: bold;
     color: #333; 
     margin: 5px 0;
+}
+#productDesc {
+    display: none;
 }
 
 /* الأزرار */
