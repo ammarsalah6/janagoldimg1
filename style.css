@@ -273,7 +273,7 @@ table th {
     position: absolute;
     top: 15px;
     right: 25px;
-    font-size: 55px;
+    font-size: 99px;
     cursor: pointer;
     color: #555;
     font-weight: bold;
@@ -324,7 +324,7 @@ table th {
 .social-btn {
     text-decoration: none;
     font-size: 22px;
-    padding: 15px 25px;
+    padding: 30px 45px;
     border-radius: 50px;
     font-weight: bold;
     transition: 0.3s;
