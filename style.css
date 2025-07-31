@@ -18,7 +18,7 @@ body::before {
     z-index: -1; 
 }
 
-/* الهيدر */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ nav a {
     font-size: 18px;
 }
 
-/* الكونتينر الأساسي */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ nav a {
     gap: 20px;
 }
 
-/* الصورة الكبيرة */
+
 .main-product img {
     width: 320px;
     max-width: 100%;
@@ -65,7 +65,7 @@ nav a {
     font-size: 22px;
 }
 
-/* تفاصيل المنتج */
+
 .details {
     width: 100%;
     max-width: 100%;
@@ -74,16 +74,16 @@ nav a {
     border-radius: 15px;
 }
 
-/* العنوان جوا التفاصيل */
+
 .details h3 {
-    text-align: center; /* ✅ النص في النص */
+    text-align: center; 
     font-size: 35px; 
     font-weight: bold; 
     color: #0f7cf8; 
     margin-bottom: 10px; 
 }
 
-/* مربع البحث */
+
 .search-box {
     position: relative;
     display: flex;
@@ -96,7 +96,7 @@ nav a {
 
 .search-box input {
     width: 100%;
-    padding: 10px 40px 10px 10px; /* مساحة للأيقونة */
+    padding: 10px 40px 10px 10px; 
     font-size: 30px;
     border-radius: 20px;
     border: 1px solid #47b7f8;
@@ -105,13 +105,13 @@ nav a {
 
 .search-icon {
     position: absolute;
-    right: 15px; /* على حسب الاتجاه */
+    right: 15px; 
     color: #0897f7;
     font-size: 20px;
 }
 
 
-/* عنوان الموقع */
+
 .brand-titly {
     font-family: Andalus;
     font-weight: bold;
@@ -119,7 +119,7 @@ nav a {
     color: rgb(9, 199, 224);
 }
 
-/* الصور الصغيرة */
+
 .thumbs {
     display: flex;
     justify-content: center;
@@ -140,7 +140,7 @@ nav a {
     border: 2px solid gold;
 }
 
-/* الجدول */
+
 table {
     width: 100%;
     margin-top: 15px;
@@ -158,7 +158,7 @@ table th {
     background: rgba(255,255,255,0.2);
 }
 
-/* النص تحت الصورة */
+
 #productName {
     font-size: 48px;
     font-weight: bold;
@@ -176,11 +176,11 @@ table th {
     display: none;
 }
 
-/* الأزرار */
+
 .scroll-down-btn,
 .scroll-up-btn {
     position: fixed;
-    right: 20px; /* ✅ ثابت من اليمين */
+    right: 20px; 
     Bottom: 300px;
     background: #0970e6;
     color: #0e1df5;
@@ -214,9 +214,9 @@ table th {
     margin-bottom: 15px;
     transition: transform 0.9s ease;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.7); /* ✅ شادو دهبي */
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.7);
 }
-/* زر "اعرف عنا" */
+
 .about-btn {
     color: #fff;
     background: #0fa7ee;
@@ -232,7 +232,7 @@ table th {
     transform: scale(1.05);
 }
 
-/* البوب أب */
+
 .about-overlay {
     display: none;
     position: fixed;
@@ -304,7 +304,7 @@ table th {
     transform: scale(1.5);
 }
 
-/* حركة النبض */
+
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 rgba(10, 155, 212, 0.7); }
     70% { box-shadow: 0 0 0 15px rgba(212,158,10, 0); }
@@ -316,7 +316,7 @@ table th {
     font-size: 20px;
 }
 
-/* أزرار السوشيال */
+
 .social-links {
     display: flex;
     justify-content: center;
