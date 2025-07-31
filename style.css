@@ -246,7 +246,7 @@ table th {
 .about-content {
     background: #fff;
     color: #333;
-    padding: 55px;
+    padding: 45px;
     border-radius: 15px;
     max-width: 700px;
     width: 90%;
@@ -264,7 +264,8 @@ table th {
 }
 .about-content p {
     color: #444;
-    font-size: 55px;
+    font-size: 50px;
+    font-weigt: bold;
     line-height: 1.6;
 }
 
@@ -272,7 +273,7 @@ table th {
     position: absolute;
     top: 15px;
     right: 25px;
-    font-size: 28px;
+    font-size: 55px;
     cursor: pointer;
     color: #555;
     font-weight: bold;
@@ -323,7 +324,7 @@ table th {
 .social-btn {
     text-decoration: none;
     font-size: 22px;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 50px;
     font-weight: bold;
     transition: 0.3s;
