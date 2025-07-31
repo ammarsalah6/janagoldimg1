@@ -246,7 +246,7 @@ table th {
 .about-content {
     background: #fff;
     color: #333;
-    padding: 25px;
+    padding: 55px;
     border-radius: 15px;
     max-width: 700px;
     width: 90%;
@@ -259,12 +259,12 @@ table th {
 .about-content h2 {
     color: #d49e0a;
     margin-bottom: 10px;
-    font-size: 42px;
+    font-size: 62px;
     font-family: 'Times New Roman', Times, serif;
 }
 .about-content p {
     color: #444;
-    font-size: 25px;
+    font-size: 55px;
     line-height: 1.6;
 }
 
