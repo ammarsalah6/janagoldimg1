@@ -138,7 +138,7 @@ nav a {
 }
 
 .lang-switch.move-right {
-    right: 650px; /* ✅ ترجع لليمين */
+    right: 800px; /* ✅ ترجع لليمين */
 }
 
 .lang-switch button {
