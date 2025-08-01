@@ -138,7 +138,7 @@ nav a {
 }
 
 .lang-switch.move-right {
-    right: 800px; /* ✅ ترجع لليمين */
+    right: 500px; /* ✅ ترجع لليمين */
 }
 
 .lang-switch button {
@@ -148,7 +148,7 @@ nav a {
     background: #0a83d4;
     color: #fff;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 18px;
     border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
@@ -269,7 +269,7 @@ table th {
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     transition: 0.3s;
 }
 .about-btn:hover {
