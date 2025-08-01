@@ -271,6 +271,10 @@ table th {
     font-weight: bold;
     font-size: 18px;
     transition: 0.3s;
+    position: fixed !important;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
 }
 .about-btn:hover {
     background: #07edf5;
