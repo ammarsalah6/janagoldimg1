@@ -18,7 +18,7 @@ body::before {
     z-index: -1; 
 }
 
-
+/* الهيدر */
 header {
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ nav a {
     font-size: 18px;
 }
 
-
+/* الكونتينر الأساسي */
 .container {
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ nav a {
     gap: 20px;
 }
 
-
+/* الصورة الكبيرة */
 .main-product img {
     width: 320px;
     max-width: 100%;
@@ -65,7 +65,7 @@ nav a {
     font-size: 22px;
 }
 
-
+/* تفاصيل المنتج */
 .details {
     width: 100%;
     max-width: 100%;
@@ -74,16 +74,16 @@ nav a {
     border-radius: 15px;
 }
 
-
+/* العنوان جوا التفاصيل */
 .details h3 {
-    text-align: center; 
+    text-align: center; /* ✅ النص في النص */
     font-size: 35px; 
     font-weight: bold; 
     color: #0f7cf8; 
     margin-bottom: 10px; 
 }
 
-
+/* مربع البحث */
 .search-box {
     position: relative;
     display: flex;
@@ -96,7 +96,7 @@ nav a {
 
 .search-box input {
     width: 100%;
-    padding: 10px 40px 10px 10px; 
+    padding: 10px 40px 10px 10px; /* مساحة للأيقونة */
     font-size: 30px;
     border-radius: 20px;
     border: 1px solid #47b7f8;
@@ -105,20 +105,65 @@ nav a {
 
 .search-icon {
     position: absolute;
-    right: 15px; 
+    right: 15px; /* على حسب الاتجاه */
     color: #0897f7;
     font-size: 20px;
 }
 
 
-
+/* عنوان الموقع */
 .brand-titly {
     font-family: Andalus;
     font-weight: bold;
     font-size: 52px;
-    color: rgb(9, 199, 224);
+    color: rgb(217, 235, 238);
+    animation: glowingText 3s infinite alternate;
 }
 
+@keyframes glowingText {
+    0% { text-shadow: 0 0 5px #19f1c3, 0 0 10px #59aff5, 0 0 20px #0d72f7; }
+    50% { text-shadow: 0 0 20px #0fbcf1, 0 0 40px #1575b4, 0 0 50px #2063f5; }
+    100% { text-shadow: 0 0 5px #3facf4, 0 0 10px #128ef3, 0 0 20px #1763f1; }
+}
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 280px;
+    display: flex;
+    transition: all 0.5s ease; /* ✅ حركة ناعمة */
+}
+
+.lang-switch.move-left {
+    right: 280px; /* ✅ تتحرك لليسار */
+}
+
+.lang-switch.move-right {
+    right: 1000px; /* ✅ ترجع لليمين */
+}
+
+.lang-switch button {
+    padding: 16px 30px;
+    margin-left: 12px;
+    border: none;
+    background: #0a83d4;
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lang-switch button:hover {
+    background: #0ad2f5;
+}
+
+.flag-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
 
 .thumbs {
     display: flex;
@@ -140,7 +185,7 @@ nav a {
     border: 2px solid gold;
 }
 
-
+/* الجدول */
 table {
     width: 100%;
     margin-top: 15px;
@@ -152,15 +197,15 @@ table {
 table th, table td {
     border: 1px solid #0bc6e7;
     padding: 5px;
-    text-align: center;
+    text-align: center; 
 }
 table th {
     background: rgba(255,255,255,0.2);
 }
 
-
+/* النص تحت الصورة */
 #productName {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: bold;
     color: #f30b0b;
     margin: 10px 0;
@@ -176,11 +221,11 @@ table th {
     display: none;
 }
 
-
+/* الأزرار */
 .scroll-down-btn,
 .scroll-up-btn {
     position: fixed;
-    right: 20px; 
+    right: 20px; /* ✅ ثابت من اليمين */
     Bottom: 300px;
     background: #0970e6;
     color: #0e1df5;
@@ -214,9 +259,9 @@ table th {
     margin-bottom: 15px;
     transition: transform 0.9s ease;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.7);
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.7); /* ✅ شادو دهبي */
 }
-
+/* زر "اعرف عنا" */
 .about-btn {
     color: #fff;
     background: #0fa7ee;
@@ -232,7 +277,7 @@ table th {
     transform: scale(1.05);
 }
 
-
+/* البوب أب */
 .about-overlay {
     display: none;
     position: fixed;
@@ -249,7 +294,7 @@ table th {
 .about-content {
     background: #fff;
     color: #333;
-    padding: 45px;
+    padding: 25px;
     border-radius: 15px;
     max-width: 700px;
     width: 90%;
@@ -262,21 +307,20 @@ table th {
 .about-content h2 {
     color: #d49e0a;
     margin-bottom: 10px;
-    font-size: 62px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
 }
 .about-content p {
     color: #444;
-    font-size: 40px;
-    font-weigt: bold;
+    font-size: 25px;
     line-height: 1.6;
 }
 
 .close-btn {
     position: absolute;
-    top: 15px;
+    top: 25px;
     right: 25px;
-    font-size: 99px;
+    font-size: 30px;
     cursor: pointer;
     color: #555;
     font-weight: bold;
@@ -304,7 +348,7 @@ table th {
     transform: scale(1.5);
 }
 
-
+/* حركة النبض */
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 rgba(10, 155, 212, 0.7); }
     70% { box-shadow: 0 0 0 15px rgba(212,158,10, 0); }
@@ -316,7 +360,7 @@ table th {
     font-size: 20px;
 }
 
-
+/* أزرار السوشيال */
 .social-links {
     display: flex;
     justify-content: center;
@@ -327,7 +371,7 @@ table th {
 .social-btn {
     text-decoration: none;
     font-size: 22px;
-    padding: 30px 45px;
+    padding: 15px 20px;
     border-radius: 50px;
     font-weight: bold;
     transition: 0.3s;
