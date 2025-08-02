@@ -322,7 +322,7 @@ table th {
     position: absolute;
     top: 25px;
     right: 25px;
-    font-size: 30px;
+    font-size: 50px;
     cursor: pointer;
     color: #555;
     font-weight: bold;
@@ -393,4 +393,5 @@ table th {
     font-size: 30px;   
     color: #f5f4fa;
 }
+
 
