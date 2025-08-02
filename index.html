@@ -12,16 +12,7 @@
     
 <header>
     <div class="brand-titly">" Jana Gold " الحلاوة حلاوتنا</div>
-    <div class="lang-switch">
-    <button onclick="switchLang('ar')">
-        <img src="saudi-flag.png" alt="Arabic" class="flag-icon"> عربي
-    </button>
-    <button onclick="switchLang('en')">
-        <img src="uk-flag.png" alt="English" class="flag-icon"> English
-    </button>
-</div>
-
-
+    
     <nav>
         <a href="#" class="about-btn attention" onclick="openAbout(); return false;">
         <i class="fa-solid fa-circle-exclamation"></i> من نحن ؟</a>
@@ -35,15 +26,21 @@
         <p id="productDesc">اصل الحلاوة في مصر</p>
     </div>
     <div class="details">
-        <h3>Available items</h3>
+        <h3></h3>
 <div class="search-box">
-    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-    <input type="text" id="searchInput" placeholder="saerch..." onkeyup="filterTable()">
+    <div class="input-container">
+        <input type="text" id="searchInput" required placeholder=" ">
+        <label for="searchInput">Search...</label>
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
 </div>
+
+<div>
+
         <table id="productTable">
             
         </table>
-    </div>
+    
 </div>
 
 <div class="thumbs" id="thumbsSection">
@@ -236,7 +233,7 @@
   ['113','نوجا رش بندق ميني','5 كجم','كيلو','180 E£'],
   ['42','نوجا رش بندق مسطرة','5 كجم','كيلو','185 E£']
     ])">
-    <img src="moaba.jpeg" onclick="changeProduct('بولا & فرحانة & حندوقة ','تشكيلة كبيرة من اصناف حلاوة حلاوتنا والتي تتميز ايضا بانفرادنا بانواع كثيرة منها','moaba.jpeg', [
+    <img src="baula.jpeg" onclick="changeProduct('بولا & فرحانة & حندوقة ','تشكيلة كبيرة من اصناف حلاوة حلاوتنا والتي تتميز ايضا بانفرادنا بانواع كثيرة منها','baula.jpeg', [
   ['23','حندوقة','5 كجم','كيلو','85 E£'],
   ['23*','سويسرول حندوقة','4 كجم','كيلو','85 E£'],
   ['1005','فرحانة','10 كجم','كيلو','55 E£'],

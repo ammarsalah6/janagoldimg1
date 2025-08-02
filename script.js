@@ -69,17 +69,3 @@ function openAbout() {
 function closeAbout() {
     document.getElementById('aboutSection').style.display = 'none';
 }
-function switchLang(lang) {
-    const langSwitch = document.querySelector('.lang-switch');
-
-    if (lang === 'ar') {
-        document.body.setAttribute('dir', 'rtl');
-        langSwitch.classList.remove('move-left');
-        langSwitch.classList.add('move-right');
-    } else {
-        document.body.setAttribute('dir', 'ltr');
-        langSwitch.classList.remove('move-right');
-        langSwitch.classList.add('move-left');
-    }
-}
-

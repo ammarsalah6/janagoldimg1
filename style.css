@@ -84,38 +84,74 @@ nav a {
 }
 
 /* مربع البحث */
+/* الصندوق الرئيسي */
 .search-box {
-    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 80%;
     max-width: 400px;
-    margin: 10px auto;
+    margin: 15px auto;
+    border-radius: 5px;
+   
 }
 
-.search-box input {
+/* حاوية الإدخال */
+.input-container {
+    position: relative;
     width: 100%;
-    padding: 10px 40px 10px 10px; /* مساحة للأيقونة */
-    font-size: 30px;
-    border-radius: 20px;
-    border: 1px solid #47b7f8;
-    outline: none;
 }
 
+/* البوكس */
+.input-container input {
+    width: 100%;
+    padding: 14px  14px 12px; /* مساحة للأيقونة */
+    font-size: 32px;
+    border-radius: 45px;
+    border: 2px solid #47b7f8;
+    outline: none;
+    background: rgba(255,255,255,0.6);
+    color: #0970e6;
+}
+
+/* الليبل */
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+/* تأثير الفلوتينج */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: -15px;
+    left: 10px;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0fa7ee;
+    padding: 0 5px;
+}
+
+/* أيقونة البحث */
 .search-icon {
     position: absolute;
-    right: 15px; /* على حسب الاتجاه */
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
     color: #0897f7;
-    font-size: 20px;
+    font-size: 28px;
 }
-
 
 /* عنوان الموقع */
 .brand-titly {
     font-family: Andalus;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 52px;
     color: rgb(217, 235, 238);
     animation: glowingText 3s infinite alternate;
 }
@@ -125,45 +161,7 @@ nav a {
     50% { text-shadow: 0 0 20px #0fbcf1, 0 0 40px #1575b4, 0 0 50px #2063f5; }
     100% { text-shadow: 0 0 5px #3facf4, 0 0 10px #128ef3, 0 0 20px #1763f1; }
 }
-.lang-switch {
-    position: absolute;
-    top: 20px;
-    right: 280px;
-    display: flex;
-    transition: all 0.5s ease; /* ✅ حركة ناعمة */
-}
 
-.lang-switch.move-left {
-    right: 280px; /* ✅ تتحرك لليسار */
-}
-
-.lang-switch.move-right {
-    right: 650px; /* ✅ ترجع لليمين */
-}
-
-.lang-switch button {
-    padding: 12px 20px;
-    margin-left: 12px;
-    border: none;
-    background: #0a83d4;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.lang-switch button:hover {
-    background: #0ad2f5;
-}
-
-.flag-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
 
 .thumbs {
     display: flex;
@@ -221,7 +219,7 @@ table th {
     display: none;
 }
 
-/* الأزرار */
+/*  الأزرار اب وبتن */
 .scroll-down-btn,
 .scroll-up-btn {
     position: fixed;
@@ -265,11 +263,11 @@ table th {
 .about-btn {
     color: #fff;
     background: #0fa7ee;
-    padding: 12px 20px;
+    padding: 20px 50px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     transition: 0.3s;
     position: fixed !important;
     top: 20px;
